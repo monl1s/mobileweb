@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU Campus Guide - มหาวิทยาลัยขอนแก่น</title>
+    <!-- ผูกไฟล์ CSS ที่เราจะสร้าง -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER: ส่วนหัวของเว็บ -->
+    <header>
+        <div class="logo-area">
+            <!-- Canvas สำหรับ Logo Animation -->
+            <canvas id="kkuLogoCanvas" width="75" height="75"></canvas>
+            <h1>KKU Campus Guide: แนะนำสถานที่ในมหาวิทยาลัยขอนแก่น</h1>
+        </div>
+        <p>Khon Kaen University: The Sanctuary of Intellect and Integration</p>
+    </header>
+
+    <!-- MAIN: เนื้อหาส่วนหลัก -->
+    <main>
+        
+        <!-- SECTION 1: หอสมุด (Library) -->
+        <section id="library">
+            <h2>1. สำนักหอสมุด (Central Library)</h2>
+            <p class="description">เป็นศูนย์กลางการเรียนรู้ที่สำคัญที่สุดของมหาวิทยาลัยขอนแก่น อาคารทันสมัย มีพื้นที่อ่านหนังสือCo-working Space และฐานข้อมูลทางวิชาการที่ครบครัน เป็นจุดหมายหลักสำหรับงานวิจัยและค้นคว้าของนักศึกษา</p>
+            <div class="image-gallery">
+                <!-- เปลี่ยน 'library_1.jpg' เป็นชื่อไฟล์รูปภาพจริงในโฟลเดอร์ 'images' ของคุณ -->
+                <figure class="box">
+                    <img src="images/library_1.jpg" alt="สำนักหอสมุดภายนอก">
+                    <figcaption>ด้านหน้าสำนักหอสมุด</figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="images/library_2.jpg" alt="พื้นที่อ่านหนังสือภายใน">
+                    <figcaption>บรรยากาศพื้นที่อ่านหนังสือ</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION 2: บึงสีฐาน (Si Than Lake) -->
+        <section id="sithan">
+            <h2>2. บึงสีฐาน</h2>
+            <p class="description">หัวใจสีเขียวของ KKU ไม่ได้เป็นเพียงแหล่งน้ำ แต่เป็นพื้นที่พักผ่อนหย่อนใจและออกกำลังกาย รอบบึงสีฐานมีการจัดกิจกรรมสำคัญของมหาวิทยาลัย เช่น งานลอยกระทง KKU Hues และเป็นจุดรวมตัวสำหรับการวิ่งและปั่นจักรยานยามเย็น</p>
+            <div class="image-gallery">
+                <figure class="box">
+                    <img src="images/sithan_1.jpg" alt="บึงสีฐานยามเช้า">
+                    <figcaption>วิวทิวทัศน์รอบบึงสีฐาน</figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="images/sithan_2.jpg" alt="กิจกรรมบริเวณบึง">
+                    <figcaption>สะพานข้ามบึงสีฐาน</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION 3: อาคารพิมล กลกิจ (Pimon Klakij) -->
+        <section id="pimon-klakij">
+            <h2>3. อาคารพิมล กลกิจ (ตึกอธิการบดีหลังเดิม)</h2>
+            <p class="description">อาคารที่มีสถาปัตยกรรมโดดเด่นและเป็นสัญลักษณ์ทางประวัติศาสตร์ของมหาวิทยาลัย ปัจจุบันใช้เป็นสถานที่จัดประชุมสำคัญ และยังเป็นจุดถ่ายรูปยอดนิยมเนื่องจากตัวอาคารมีรูปแบบที่สวยงามและมีความขลัง</p>
+            <div class="image-gallery">
+                <figure class="box">
+                    <img src="images/pimon_klakij_1.jpg" alt="ด้านหน้าอาคารพิมล กลกิจ">
+                    <figcaption>ด้านหน้าอาคารพิมล กลกิจ</figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="images/pimon_klakij_2.jpg" alt="มุมมองด้านข้างอาคาร">
+                    <figcaption>มุมยอดนิยมในการถ่ายภาพ</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION 4: โรงพยาบาลศรีนครินทร์ (Srinagarind Hospital) -->
+        <section id="srinagarind">
+            <h2>4. โรงพยาบาลศรีนครินทร์ (ม.ขอนแก่น)</h2>
+            <p class="description">โรงพยาบาลหลักในภาคตะวันออกเฉียงเหนือ เป็นทั้งสถานที่รักษาพยาบาลและศูนย์การเรียนการสอนทางการแพทย์ที่สำคัญที่สุดของภูมิภาค มีความเชี่ยวชาญทางการแพทย์ที่หลากหลาย และเป็นแหล่งฝึกปฏิบัติของนักศึกษาคณะแพทยศาสตร์และสายสุขภาพ</p>
+            <div class="image-gallery">
+                <figure class="box">
+                    <img src="images/srinagarind_1.jpg" alt="โรงพยาบาลศรีนครินทร์ส่วนหน้า">
+                    <figcaption>อาคารหลักของโรงพยาบาล</figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="images/srinagarind_2.jpg" alt="ภายในหอผู้ป่วย">
+                    <figcaption>บรรยากาศศูนย์การแพทย์</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="suggest-form" class="form-container">
+        <h2>แนะนำสถานที่ใหม่ใน KKU</h2>
+        <p>คุณสามารถแนะนำสถานที่ที่น่าสนใจอื่น ๆ ภายในมหาวิทยาลัยขอนแก่น เพื่อให้คู่มือนี้สมบูรณ์ยิ่งขึ้น</p>
+        
+        <!-- โค้ด Web3Forms: ต้องเปลี่ยน YOUR_ACCESS_KEY_HERE เป็นคีย์ของคุณ -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Hidden Input สำหรับ Access Key (สำคัญมาก) -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
+            <!-- Hidden Input เพื่อกำหนดหัวข้ออีเมลที่ได้รับ (ไม่บังคับ) -->
+            <input type="hidden" name="subject" value="KKU Guide: สถานที่แนะนำใหม่">
+
+            <div class="form-group">
+                <label for="location_name">ชื่อสถานที่ (ภาษาไทย/อังกฤษ):</label>
+                <input type="text" id="location_name" name="Location Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="details">รายละเอียดโดยย่อ:</label>
+                <textarea id="details" name="Details" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image_url">URL ของภาพประกอบ (External Link):</label>
+                <!-- ใช้ type="url" เพื่อบังคับให้เป็นรูปแบบ URL ที่ถูกต้อง -->
+                <input type="url" id="image_url" name="Image URL" placeholder="https://example.com/kku_photo.jpg" required>
+            </div>
+
+            <button type="submit" class="submit-button">ส่งคำแนะนำ</button>
+        </form>
+    </section>
+    </main>
+
+    <!-- FOOTER: ส่วนท้ายเว็บ (ใส่ข้อมูลนักศึกษา) -->
+    <footer>
+        <p>สร้างโดย: [ชื่อ-นามสกุล นักศึกษา]</p>
+        <p>รหัสประจำตัว: [รหัสนักศึกษา]</p>
+        <p>&copy; 2024 KKU Campus Guide</p>
+    </footer>
+    <script defer src="canvas_logo.js"></script>
+</body>
+</html>
