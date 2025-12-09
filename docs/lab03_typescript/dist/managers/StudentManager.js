@@ -1,0 +1,35 @@
+export class StudentManager {
+    constructor() {
+        this.students = [];
+    }
+    addStudent(student) {
+        this.students.push(student);
+        this.saveToLocalStorage();
+    }
+    getAllStudents() {
+        return this.students;
+    }
+    findStudentByID(id) {
+        return this.students.find(s => s.id === id);
+    }
+    findStudentsByName(name) {
+        const search_term = name.toLowerCase();
+        return this.students.filter(s => s.first_name.toLowerCase().includes(search_term) ||
+            s.last_name.toLowerCase().includes(search_term));
+    }
+    findStudentByEmail(email) {
+        return this.students.find(s => s.email === email);
+    }
+    findStudentsByMajor(major) {
+        return this.students.filter(s => s.major.toLowerCase().includes(major.toLowerCase()));
+    }
+    saveToLocalStorage() {
+        localStorage.setItem("students", JSON.stringify(this.students));
+    }
+    loadFromLocalStorage() {
+        const data = localStorage.getItem("students");
+        if (data) {
+            this.students = JSON.parse(data);
+        }
+    }
+}
